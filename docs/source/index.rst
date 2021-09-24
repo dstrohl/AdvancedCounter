@@ -24,16 +24,25 @@ Some of the abilities that this provides are:
 Also included is a sub-class if AdvCounter called IndentHelper that provides some functions for handling running indents
 
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   install
    usage
    advanced
    example
    named
    indent_helper
+   history
+
+Install
+-------
+
+Installation can be done through pip using
+
+   >>> pip install AdvancedCounter
+
 
 
 Indices and tables

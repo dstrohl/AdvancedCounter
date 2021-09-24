@@ -1,11 +1,11 @@
 import decimal
 from unittest import TestCase
-from advanced_counter.adv_counter import NamedCounter, AdvCounter, \
+from src.advanced_counter.adv_counter import NamedCounter, AdvCounter, \
     minmax, IncrementByDict, IncrementByValue, IncrementByList,\
     INCREMENT_LIST_ON_INDEX_RESET, \
     INCREMENT_LIST_ON_INDEX_NOTHING, INCREMENT_LIST_ON_INDEX_SET
 
-from copy import copy, deepcopy
+from copy import copy
 
 """
 ns_1 = ['name1', 3]

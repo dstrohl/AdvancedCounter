@@ -1,5 +1,5 @@
-from advanced_counter.adv_counter import AdvCounter
-from advanced_counter.helpers import _UNSET, not_none
+from src.advanced_counter.adv_counter import AdvCounter
+from src.advanced_counter.helpers import _UNSET, not_none
 
 def indent_text(text_in, *args, indent=0, indent_size=0, char=' ', ind_first_line=True, sep='\n', defer=False):
     """

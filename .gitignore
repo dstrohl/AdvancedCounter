@@ -219,4 +219,4 @@ cython_debug/
 *.tmp
 
 !/.gitignore
-/advanced_counter/docs/html/
+/docs/html/

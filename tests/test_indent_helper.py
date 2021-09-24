@@ -1,7 +1,7 @@
 __author__ = 'dstrohl'
 
 from unittest import TestCase
-from advanced_counter.indent_helper import IndentHelper
+from src.advanced_counter.indent_helper import IndentHelper
 
 
 class TestIndentHelper(TestCase):
@@ -69,15 +69,15 @@ class TestIndentHelper(TestCase):
                 self.assertEqual(11, ih.indent)
             self.assertEqual(10, ih.indent)
             ih.set(10000)
-            self.assertEqual(100, ih.indent)
+            self.assertEqual(20, ih.indent)
             with ih:
-                self.assertEqual(100, ih.indent)
+                self.assertEqual(20, ih.indent)
                 ih.set(1)
                 with ih:
                     self.assertEqual(2, ih.indent)
                 self.assertEqual(1, ih.indent)
 
-            self.assertEqual(100, ih.indent)
+            self.assertEqual(20, ih.indent)
 
         self.assertEqual(4, ih.indent)
 
@@ -152,5 +152,5 @@ class TestIndentHelper(TestCase):
     def test_textwrap_with_first_line(self):
         ih = IndentHelper(1, foo=6)
         self.assertEqual(str(ih), '    ')
-        tmp_ret = ih.indent_text('foobar\nblah', inc_first=False)
+        tmp_ret = ih.indent_text('foobar\nblah', ind_first_line=False)
         self.assertEqual(tmp_ret, 'foobar\n    blah')

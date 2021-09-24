@@ -65,7 +65,7 @@ class IncrementByDict(IncrementByValue):
     So, with a dict like {'foobar': 5, 'snafu' -1}, you can do ac('foobar') and it will increment the counter by 5
     """
 
-    def __init__(self, value, default_value=1, invalid_value='*', no_scan=False):
+    def __init__(self, value, default_value = 1, invalid_value='*', no_scan=False):
         """
         :param value: this is a dict or dict like object that will be used for the increment by
         :param default_value:  this is the value that is returned if an invalid key or no key is passed.

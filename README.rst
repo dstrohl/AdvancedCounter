@@ -1,7 +1,5 @@
-# AdvancedCounter
-
-Welcome to AdvancedCounter's documentation!
-===========================================
+AdvancedCounter
+===============
 
 This utility class provides some helpers for more advanced counting needs.
 
@@ -20,9 +18,11 @@ Some of the abilities that this provides are:
 * Multi-counter helper that maintains multiple named counters and can return a final report on the counters.
 * Call a function every x times the counter is called (updating a status message).
 
-Also included is a sub-class if AdvCounter called IndentHelper that provides some functions for handling running indents
+Also included is a sub-class of AdvCounter called IndentHelper that provides some functions for handling running indents
 
 Documentatation is at: https://advancedcounter.readthedocs.io/en/latest/
+Source is at: https://github.com/dstrohl/AdvancedCounter
+This can be installed via pypi and pip with
 
-This can be installed via pipy and pip with
+    >>> pip install AdvancedCounter
 
